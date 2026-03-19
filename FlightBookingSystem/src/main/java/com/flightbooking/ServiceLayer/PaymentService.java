@@ -10,6 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.flightbooking.DAOLayer.PaymentDAO;
 import com.flightbooking.DTOLayer.ResponseStructure;
@@ -18,6 +19,7 @@ import com.flightbooking.EntityLayer.Payment;
 import com.flightbookingExceptionLayer.IdNotFoundException;
 import com.flightbookingExceptionLayer.NoPaymentException;
 
+@Service
 public class PaymentService {
 	
 	@Autowired

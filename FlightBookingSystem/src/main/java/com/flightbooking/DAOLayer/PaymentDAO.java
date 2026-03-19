@@ -46,6 +46,6 @@ public class PaymentDAO {
 	}
 	
 	public Page<Payment> getPaymentsByPaginationAndSorting(Pageable pageable ){
-		return paymentRepository.findAllByPaginationAndSorting(pageable);
+		return paymentRepository.findAll(pageable);
 	}
 }

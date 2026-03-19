@@ -12,7 +12,5 @@ public interface FlightRepository extends JpaRepository<Flight, Integer>{
 	Optional<List<Flight>> getFlightsBySourceAndDestination(String source, String destination);
 	
 	Optional<List<Flight>> getFlightsByAirline(String airline);
-
-	List<String> findAllSeatNumberById(Integer id);
 	
 }
